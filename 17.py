@@ -19,13 +19,12 @@ bank_balance = 0
 each_line = raw_input()
 
 while each_line:
-	if each_line:
-		val = each_line.split(' ')
-		op = val[0]
-		amount = int(val[1])
-		if op == 'D':
-			bank_balance+=amount
-		if op == 'W':
-			bank_balance-=amount
+	val = each_line.split(' ')
+	op = val[0]
+	amount = int(val[1])
+	if op == 'D':
+		bank_balance+=amount
+	if op == 'W':
+		bank_balance-=amount
 	each_line = raw_input()
 print bank_balance
