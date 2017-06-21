@@ -10,6 +10,8 @@ Use ** operator to get power of a number.
 Use range() for loops.
 '''
 d = {}
-for x in range(1,21):
-	d[x] = x*x
+def pr_d(start, end):
+	for x in range(start,end+1):
+		d[x] = x*x
+pr_d(1,20)
 print d
