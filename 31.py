@@ -9,8 +9,8 @@ Use % operator to check if a number is even or odd.
 '''
 def even_or_odd(n):
 	if n%2==0:
-		print "It is an odd number"
-	else:
 		print "It is an even number"
+	else:
+		print "It is an odd number"
 even_or_odd(2)
 even_or_odd(3)
