@@ -18,9 +18,8 @@ def filter_func(n):
 n = 20
 #list_of_nums = [x for x in l]
 #print list_of_nums
-#g = lambda x : return x
-#print g(9)
-
+g = lambda x : x**2
+print g(9)
 #list comprehensions
 list_of_nums = [x for x in range(1,n)]
 print list_of_nums
@@ -42,5 +41,7 @@ def filter_even_nums(n):
         return n
 print "ans"
 #ans = filter(filter_even_nums,  list_numbers)
-ans = filter(filter_even_nums,  [x for x in range(1,11)])
+#ans = filter(filter_even_nums,  [x for x in range(1,11)])
+ans = filter( lambda x : x%2 == 0,  [x for x in range(1,11)])
+
 print ans
