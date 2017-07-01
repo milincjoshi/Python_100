@@ -18,6 +18,8 @@ Hints:
 
 Use \w to match letters.
 
+\w+  does not match .
+
 '''
 
 import re
