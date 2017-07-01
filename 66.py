@@ -26,4 +26,5 @@ def fib(n):
         return 1
     return fib(n-1)+fib(n-2)
 
-print [fib(x) for x in range(1,int(raw_input())+1)]
+l = [str(fib(x)) for x in range(1,int(raw_input())+1)]
+print (',').join(l)
