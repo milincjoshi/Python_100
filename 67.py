@@ -17,6 +17,6 @@ it should be assumed to be a console input.
 def gen(n):
     for x in range(0,n+1,2):
         yield x
-g = gen(10)
+g = gen(int(raw_input()))
 for each_value in g:
     print each_value
